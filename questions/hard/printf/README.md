@@ -1,0 +1,12 @@
+<!--info-header-start--><h1>printf <img src="https://img.shields.io/badge/-hard-de3d37" alt="hard"/> <img src="https://img.shields.io/badge/-%23template--literal-999" alt="#template-literal"/></h1><p><a href="https://tsch.js.org/545/play" target="_blank"><img src="https://img.shields.io/badge/-Take%20the%20Challenge-3178c6?logo=typescript&logoColor=white" alt="Take the Challenge"/></a>
+
+Implement `Format<T extends string>` generic.
+
+For example,
+
+```ts
+type FormatCase1 = Format<'%sabc'> // FormatCase1 : string => string
+type FormatCase2 = Format<'%s%dabc'> // FormatCase2 : string => number => string
+type FormatCase3 = Format<'sdabc'> // FormatCase3 :  string
+type FormatCase4 = Format<'sd%abc'> // FormatCase4 :  string
+```
