@@ -1,8 +1,8 @@
-import { Capitalize } from './template'
+import { MyCapitalize } from './template'
 
 type cases = [
-  Expect<Equal<Capitalize<'foobar'>, 'Foobar'>>,
-  Expect<Equal<Capitalize<'FOOBAR'>, 'FOOBAR'>>,
-  Expect<Equal<Capitalize<'foo bar'>, 'Foo bar'>>,
-  Expect<Equal<Capitalize<''>, ''>>,
+  Expect<Equal<MyCapitalize<'foobar'>, 'Foobar'>>,
+  Expect<Equal<MyCapitalize<'FOOBAR'>, 'FOOBAR'>>,
+  Expect<Equal<MyCapitalize<'foo bar'>, 'Foo bar'>>,
+  Expect<Equal<MyCapitalize<''>, ''>>,
 ]
